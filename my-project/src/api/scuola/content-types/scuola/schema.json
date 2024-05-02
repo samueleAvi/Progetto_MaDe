@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scuolas",
+  "info": {
+    "singularName": "scuola",
+    "pluralName": "scuolas",
+    "displayName": "Scuola"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "open_days": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::open-day.open-day",
+      "mappedBy": "scuola"
+    }
+  }
+}

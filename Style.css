@@ -1,0 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+nav{
+    font-family: 'D-DIN', sans-serif;
+    font-family: 'D-DIN Condensed', sans-serif;
+    font-family: 'D-DIN Exp', sans-serif;
+}
+
+#drp{
+    font-size: 25px;    
+    color: black;
+    text-decoration: none;
+}
+
+#titolo{
+    text-align: center;
+    font-weight: bold;
+}
