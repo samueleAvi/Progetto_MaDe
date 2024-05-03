@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { NavbarComponent } from '../../../navbar/navbar.component';
 @Component({
   selector: 'app-fontana',
   standalone: true,
-  imports: [],
+  imports: [NavbarComponent],
   templateUrl: './fontana.component.html',
   styleUrl: './fontana.component.css'
 })
