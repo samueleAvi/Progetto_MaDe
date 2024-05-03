@@ -5,7 +5,7 @@ body{
     font-family: 'D-DIN Condensed', sans-serif;
     font-family: 'D-DIN Exp', sans-serif;
 
-    background-color: rgb(204, 186, 158);
+    background-color: rgb(255, 228, 187);
 }
 
 
@@ -55,7 +55,7 @@ body{
       font-size: 30px;
       bottom: 50%;
       color: #000000;
-      background-color: rgb(204, 186, 158);
+      background-color: rgb(255, 228, 187);
     }
   }
 
