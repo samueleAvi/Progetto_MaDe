@@ -8,5 +8,19 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  scuole = [
+    "Liceo Fabio Filzi",
+    "Arcivescovile",
+    "Istituto Tecnico Tecnologico Marconi Rovereto",
+    "Liceo Delle Arti Depero Rovereto",
+    "Istituto Tecnico Superiore Fontana Rovereto",
+    "Liceo Antonio Rosmini Rovereto",
+    "Università degli Studi di Trento",
+    "Alberghiero Rovereto",
+    "Istituto Istruzione Superiore Don Milani Rovereto",
+    "Opera Armida Barelli",
+    "Polo Veronesi"
+  ]
+
 
 }

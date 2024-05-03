@@ -1,10 +1,70 @@
-<nav>
-  <ul class="navBar">
-    <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
-    <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Istituti Tecnici</a></li>
-    <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Istituti Professionali</a></li>
-    <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Licei</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricimo</title>
+    <link rel="stylesheet" href="navbar.component.css">
+    <link rel="stylesheet" href="../../../../font.css">
+</head>
 
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Logo</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Info</a></li>
+
+        <li>
+          <a href="#" class="desktop-item">Istituti</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../../assets/nav-book.jpg" alt="book">
+              </div>
+              <div class="row">
+                <header>Tecnici</header>
+                <ul class="mega-links">
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="#">Vectors</a></li>
+                  <li><a href="#">Business cards</a></li>
+                  <li><a href="#">Custom logo</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Professionali</header>
+                <ul class="mega-links">
+                  <li><a href="#">ADEBGKRMV</a></li>
+                  <li><a href="#">Business Email</a></li>
+                  <li><a href="#">Mobile Email</a></li>
+                  <li><a href="#">Web Marketing</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Licei</header>
+                <ul class="mega-links">
+                  <li><a href="#">Liceo Antonio Rosmini</a></li>
+                  <li><a href="#">Scienze Umane F. Filzi</a></li>
+                  <li><a href="#">Liceo Artistico Depero</a></li>
+                  <li><a href="#">Liceo Internazionale Arcivescovile</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+</body>
+
+</html>

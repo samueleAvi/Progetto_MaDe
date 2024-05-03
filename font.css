@@ -5,23 +5,3 @@ body{
     font-family: 'D-DIN Condensed', sans-serif;
     font-family: 'D-DIN Exp', sans-serif;
 }
-
-#titolo{
-    text-align: center;
-    font-weight: bold;
-    font-size: 26px;
-}
-#drp{
-    font-size: 25px;    
-    color: black;
-    text-decoration: none;
-}
-
-nav {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    font-size: 20px;
-}
-
-.li-nav:hover{
-    background-color: rgba(223, 223, 223, 0.363);
-}
