@@ -13,7 +13,9 @@ import { UPTComponent } from './Indirizzi/professionali/upt/upt.component';
 import { MarconiComponent } from './Indirizzi/tecnici/marconi/marconi.component';
 import { FontanaComponent } from './Indirizzi/tecnici/fontana/fontana.component';
 import { VeronesiComponent } from './Indirizzi/tecnici/veronesi/veronesi.component';
-
+import { ProfessionaliComponent } from './Indirizzi/professionali/professionali.component';
+import { TecniciComponent } from './Indirizzi/tecnici/tecnici.component';
+import { LiceiComponent } from './Indirizzi/licei/licei.component';
 export const routes: Routes = [
     {path: 'navbar', component: NavbarComponent},
     {path: 'home', component: HomeComponent},
@@ -29,6 +31,9 @@ export const routes: Routes = [
     {path: 'tecnici/marconi', component: MarconiComponent},
     {path: 'tecnici/fontana', component: FontanaComponent},
     {path: 'tecnici/veronesi', component: VeronesiComponent},
+    {path: 'Indirizzi/professionali', component:ProfessionaliComponent},
+    {path: 'Indirizzi/tecnici', component:TecniciComponent},
+    {path: 'Indirizzi/licei', component:LiceiComponent},
     {path: '**', component: HomeComponent}
 
 ];

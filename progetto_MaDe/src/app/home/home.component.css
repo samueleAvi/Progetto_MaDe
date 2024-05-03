@@ -53,9 +53,10 @@ body{
       padding: 0 .5em;
       line-height: 1.5em;
       font-size: 30px;
-      bottom: 50%;
-      color: #000000;
+      bottom: 45%;
       background-color: rgb(255, 228, 187);
+      font-family: 'Impact'
+
     }
   }
 
@@ -72,4 +73,8 @@ body{
 .column {
   text-align: center;
   
+}
+
+.subdescription{
+  font-family: 'Microsoft YaHei'                                            
 }
