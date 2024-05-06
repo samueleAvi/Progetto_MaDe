@@ -794,6 +794,7 @@ export interface ApiOpenDayOpenDay extends Schema.CollectionType {
     singularName: 'open-day';
     pluralName: 'open-days';
     displayName: 'Open Day';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -807,6 +808,7 @@ export interface ApiOpenDayOpenDay extends Schema.CollectionType {
       'manyToOne',
       'api::scuola.scuola'
     >;
+    indice: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -831,6 +833,7 @@ export interface ApiScuolaScuola extends Schema.CollectionType {
     singularName: 'scuola';
     pluralName: 'scuolas';
     displayName: 'Scuola';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -844,6 +847,9 @@ export interface ApiScuolaScuola extends Schema.CollectionType {
       'oneToMany',
       'api::open-day.open-day'
     >;
+    video: Attribute.Media;
+    logo: Attribute.Media;
+    foto: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

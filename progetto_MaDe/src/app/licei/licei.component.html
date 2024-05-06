@@ -1,0 +1,9 @@
+<app-navbar></app-navbar>
+
+@if(scuole){ 
+    @for(scuola of scuole; track scuola){
+        <h1>{{scuola.attributes.nome}}</h1>
+        <a href="{{scuola.attributes.link}}">Sito</a>
+        
+    }
+}

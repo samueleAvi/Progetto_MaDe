@@ -4,7 +4,8 @@
   "info": {
     "singularName": "open-day",
     "pluralName": "open-days",
-    "displayName": "Open Day"
+    "displayName": "Open Day",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,9 @@
       "relation": "manyToOne",
       "target": "api::scuola.scuola",
       "inversedBy": "open_days"
+    },
+    "indice": {
+      "type": "integer"
     }
   }
 }

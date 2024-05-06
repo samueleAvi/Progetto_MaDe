@@ -15,7 +15,10 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     this.apiService.getScuole('scuolas').subscribe((data) => {
-      console.log(data);
+
+    this.apiService.getTecnici('scuolas');
+    this.apiService.getLicei('scuolas');
+    this.apiService.getProfessionali('scuolas');
     });
   }
 

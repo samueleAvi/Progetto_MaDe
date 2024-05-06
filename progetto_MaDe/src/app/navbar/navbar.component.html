@@ -14,7 +14,7 @@
 <body>
   <nav>
     <div class="wrapper">
-      <div class="logo"><a href="#">Orientamento Rovereto Scuole Medie</a></div>
+      <div class="logo"><a routerLink="/home" routerLinkActive="active">Orientamento Rovereto Scuole Medie</a></div>
       <input type="radio" name="slider" id="menu-btn">
       <input type="radio" name="slider" id="close-btn">
       <ul class="nav-links">
@@ -24,43 +24,15 @@
 
         <li>
           <a href="#" class="desktop-item">Istituti</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Mega Menu</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="../../assets/nav-book.jpg" alt="book">
-              </div>
-              <div class="row">
-                <header>Tecnici</header>
-                <ul class="mega-links">
-                  <li> <a routerLink="/tecnici/marconi" routerLinkActive="active" class="menu-link">ITT Marconi</a></li>
-                  <li> <a routerLink="/tecnici/fontana" routerLinkActive="active" class="menu-link">ITET Fontana</a></li>
-                  <li> <a routerLink="/tecnici/veronesi" routerLinkActive="active" class="menu-link">Polo Giuseppe Veronesi</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Professionali</header>
-                <ul class="mega-links">
-                  <li> <a routerLink="/professionali/donmilani" routerLinkActive="active" class="menu-link">Don Milani</a></li>
-                  <li> <a routerLink="/professionali/barelli" routerLinkActive="active" class="menu-link">CFP Opera Armida Barelli</a></li>
-                  <li> <a routerLink="/professionali/alberghiero" routerLinkActive="active" class="menu-link">Alberghiero</a></li>
-                  <li> <a routerLink="/professionali/upt" routerLinkActive="active" class="menu-link">UPT</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Licei</header>
-                <ul class="mega-links">
-                  <li> <a routerLink="/licei/rosmini" routerLinkActive="active" class="menu-link">Liceo Antonio Rosmini</a></li>
-                  <li> <a routerLink="/licei/filzi" routerLinkActive="active" class="menu-link">Scienze Umane F. Filzi</a></li>
-                  <li> <a routerLink="/licei/depero" routerLinkActive="active" class="menu-link">Liceo Artistico Depero</a></li>
-                  <li> <a routerLink="/licei/arcivescovile" routerLinkActive="active" class="menu-link">Arcivescovile</a></li>
-                  <li> <a routerLink="/licei/steam" routerLinkActive="active" class="menu-link">Steam International</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a routerLink="/tecnici" routerLinkActive="active">Tecnici</a></li>
+            <li><a routerLink="/professionali" routerLinkActive="active">Professionali</a></li>
+            <li><a routerLink="/licei" routerLinkActive="active">Licei</a></li>
+          </ul>
         </li>
+        
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>

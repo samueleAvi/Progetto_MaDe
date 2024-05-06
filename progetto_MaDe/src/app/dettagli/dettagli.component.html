@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+    @for(day of opendays; track day){
+        <h1>{{day.attributes.Tipo}}</h1>
+        <h2>{{day.attributes.Descrizione}}</h2>
+        <h3>{{day.attributes.orario}}</h3>
+   
+    }
+    @empty{
+        <h2>Nessun dettaglio trovato</h2>
+    }

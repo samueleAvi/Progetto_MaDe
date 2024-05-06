@@ -4,7 +4,8 @@
   "info": {
     "singularName": "scuola",
     "pluralName": "scuolas",
-    "displayName": "Scuola"
+    "displayName": "Scuola",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,36 @@
       "relation": "oneToMany",
       "target": "api::open-day.open-day",
       "mappedBy": "scuola"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "foto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+
+
+    @for(scuola of scuole; track scuola){
+        <h1>{{scuola.attributes.nome}}</h1>
+        <h2>{{scuola.attributes.tipo}}</h2>
+        <a href="{{scuola.attributes.link}}">Sito</a><br><br>
+        <a routerLink="/dettagli/{{scuola.id}}" routerLinkActive="active">Dettagli</a>
+        
+    }
+    @empty{
+        <h1>Non ci sono scuole</h1>
+    }
